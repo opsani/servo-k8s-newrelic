@@ -10,7 +10,7 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v1.10.0/bin/linux/
 
 # Install servo:  k8s adjust driver does not use adjust.py
 # alt:  https://raw.githubusercontent.com/opsani/servo-ab/master/measure
-ADD https://raw.githubusercontent.com/opsani/servo-k8s/java_args_encoder/adjust \
+ADD https://raw.githubusercontent.com/opsani/servo-k8s/master/adjust \
     https://raw.githubusercontent.com/opsani/servo-newrelic/master/measure \
     https://raw.githubusercontent.com/opsani/servo/master/measure.py \
     https://raw.githubusercontent.com/opsani/servo/master/servo \
