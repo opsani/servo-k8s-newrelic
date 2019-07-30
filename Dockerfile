@@ -8,12 +8,13 @@ RUN pip3 install requests PyYAML python-dateutil && \
 
 ADD https://storage.googleapis.com/kubernetes-release/release/v1.10.0/bin/linux/amd64/kubectl /usr/local/bin/kubectl
 
-# Install servo:  k8s adjust driver does not use adjust.py
+# Install servo:  k8s adjust driver does uses adjust.py
 # alt:  https://raw.githubusercontent.com/opsani/servo-ab/master/measure
 ADD https://raw.githubusercontent.com/opsani/servo-k8s/master/adjust \
     https://raw.githubusercontent.com/opsani/servo-newrelic/master/measure \
     https://raw.githubusercontent.com/opsani/servo/master/measure.py \
     https://raw.githubusercontent.com/opsani/servo/master/servo \
+    https://raw.githubusercontent.com/opsani/servo/master/adjust.py \
     /servo/
 
 ADD https://raw.githubusercontent.com/opsani/servo/master/encoders/__init__.py \
